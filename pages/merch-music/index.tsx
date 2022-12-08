@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function MerchMusic() {
-  return (
-    <div>MerchMusic</div>
-  )
+  return <div>MerchMusic</div>;
 }
 
-export default MerchMusic
+export default MerchMusic;
