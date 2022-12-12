@@ -35,6 +35,7 @@
     },
     "husky": {
         "hooks": {
+            "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
             "pre-commit": "lint-staged && git add -A ."
         }
     }
