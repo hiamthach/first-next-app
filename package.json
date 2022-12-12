@@ -2,11 +2,17 @@
   "name": "first-app",
   "version": "0.1.0",
   "private": true,
+  "lint-staged": {
+    "**/*.{js,jsx,json}": [
+        "prettier --write \"**/*\" --ignore-unknown"
+    ]
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@types/node": "18.11.11",
@@ -14,6 +20,7 @@
     "@types/react-dom": "18.0.9",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "husky": "^8.0.2",
     "next": "13.0.6",
     "next-translate": "^1.6.0",
     "prettier": "^2.8.0",
@@ -25,5 +32,10 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && git add -A ."
+    }
   }
 }
