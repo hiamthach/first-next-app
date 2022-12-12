@@ -5,9 +5,9 @@ import Layout from '../../layout/Layout';
 import Navbar from './components/Navbar';
 
 export default function HomePage() {
-  return (
-    <Layout seoTitle="Next - Ecommerce" title="FEAST YOUR EYES · FILL YOUR BOOTS">
-      <span>Layout</span>
-    </Layout>
-  );
+    return (
+        <Layout seoTitle="Next - Ecommerce" title="FEAST YOUR EYES · FILL YOUR BOOTS">
+            <span>Layout</span>
+        </Layout>
+    );
 }
