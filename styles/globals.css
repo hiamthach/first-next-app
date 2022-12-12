@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 @layer base {
-    body,
-    html {
-        @apply bg-light;
-    }
+  body,
+  html {
+    @apply bg-light;
+  }
 }
